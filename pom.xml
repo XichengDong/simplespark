@@ -11,8 +11,15 @@
     <spark.version>2.1.0</spark.version>
   </properties>
 
-  <dependencies>
+  <repositories>
+    <repository>
+       <id>nexus-aliyun</id>
+       <name>Nexus aliyun</name>
+       <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+    </repository>
+  </repositories>
 
+  <dependencies>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_2.10</artifactId>
