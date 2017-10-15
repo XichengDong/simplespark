@@ -9,7 +9,7 @@ object WordCount {
 
     if (args.length == 1) {
       masterUrl = args(0)
-    } else if (args.length == 3) {
+    } else if (args.length == 2) {
       masterUrl = args(0)
       inputPath = args(1)
     }
