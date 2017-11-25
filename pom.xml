@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
   <properties>
     <spark.version>2.1.0</spark.version>
-    <java.version>1.7</java.version>
+    <java.version>1.8</java.version>
     <scala.version>2.11.8</scala.version>
   </properties>
 
@@ -50,6 +50,14 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
       </plugin>
 
       <plugin>
